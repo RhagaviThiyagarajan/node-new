@@ -1,0 +1,30 @@
+ {
+  "name": "b36-english-node",
+  "version": "1.0.0",
+  "main": "index2.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index2.js",
+    "dev": "nodemon index2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RhagaviThiyagarajan/b36-english-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RhagaviThiyagarajan/b36-english-node/issues"
+  },
+  "homepage": "https://github.com/RhagaviThiyagarajan/b36-english-node#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "description": ""
+}
