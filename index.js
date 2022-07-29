@@ -27,7 +27,7 @@ console.log(process.env.MONGO_URL);
 
 //const express = require('express');//3rd party
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT||6000;
  app.listen(PORT,function()
  {
  console.log("server started successfully");
