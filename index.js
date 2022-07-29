@@ -1,7 +1,8 @@
 import express from "express";
 import { MongoClient } from "mongodb";
 
-// import 'dotenv/config' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+
+ //import 'dotenv/config' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 
 import dotenv from "dotenv";
 
@@ -26,7 +27,12 @@ console.log(process.env.MONGO_URL);
 
 //const express = require('express');//3rd party
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT||5000;
+ app.listen(PORT,function()
+ {
+ console.log("server started successfully");
+
+});
 //"mongodb://localhost:27017"-V16 & before
 
 //v16+
@@ -77,8 +83,8 @@ app.get("/movies", async function (req, res) {
 //i get from the get repo as events{} and events count{}
 //@returns {Promise<string>}
 app.get("/movies/:id", async function (req, res) {
-  const { id } = req.params;
-  console.log(id);
+  const  id  = req.params.id;
+  //console.log(id);
   const movie = await client
     .db("movie")
     .collection("movie")
