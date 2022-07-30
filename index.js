@@ -4,8 +4,9 @@ import { MongoClient } from "mongodb";
 
  //import 'dotenv/config' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 
-import dotenv from "dotenv";
+//import dotenv from "dotenv";
 
+MONGO_URL="mongodb+srv://rhagavi:rhagR123@cluster0.ubm2h.mongodb.net/?retryWrites=true&w=majority"
 dotenv.config();
 console.log(process.env.MONGO_URL);
 //process.env is a n object
