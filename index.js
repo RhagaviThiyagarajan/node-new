@@ -6,9 +6,9 @@ import { MongoClient } from "mongodb";
 
 //import dotenv from "dotenv";
 
-MONGO_URL="mongodb+srv://rhagavi:rhagR123@cluster0.ubm2h.mongodb.net/?retryWrites=true&w=majority"
-dotenv.config();
-console.log(process.env.MONGO_URL);
+
+//dotenv.config();
+//console.log(process.env.MONGO_URL);
 //process.env is a n object
 //env-environmental variables
 //this will put the url inside the variable caled process.env
@@ -34,13 +34,14 @@ const PORT = process.env.PORT||6000;
  console.log("server started successfully");
 
 });
+const MONGO_URL="mongodb+srv://rhagavi:rhagR123@cluster0.ubm2h.mongodb.net/?retryWrites=true&w=majority";
 //"mongodb://localhost:27017"-V16 & before
 
 //v16+
 
 // const MONGO_URL = "mongodb://localhost";
 //const MONGO_URL = "mongodb://127.0.0.1"; //  nodejs - 16+
-const MONGO_URL = process.env.MONGO_URL;
+//const MONGO_URL = process.env.MONGO_URL;
 
 //mongodb+srv://rhagavi:rhagR@2703@cluster0.ubm2h.mongodb.net
 //mongodb+srv://rhagavi:rhagR@2703@cluster0.ubm2h.mongodb.net
